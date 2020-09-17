@@ -1,0 +1,59 @@
+<!-- イベントハンドラの勉強 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random color example — event handler property</title>
+    <style>
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Change color</button>
+    <script>
+        // buttonオブジェクトを取得
+        const btn = document.querySelector('button');
+
+        // 0からnumberまでの間の整数をrandomに返す関数
+        function random(number) {
+            return Math.floor(Math.random()*number);
+        }
+
+        // 背景色をランダムに変える関数
+        function bgChange() {
+            const rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        // buttonオブジェクトのonclickのイベントハンドラにbgChangeを割り当てる
+        btn.onclick = bgChange;
+
+        // フォーカス当てたとき
+        btn.onfocus = bgChange;
+
+        // フォーカス外したとき
+        btn.onblur = bgChange;
+
+        // ダブルクリックしたとき
+        btn.ondblclick = bgChange;
+
+        // キーを押したり上げたりしたとき
+        window.onkeypress = bgChange;
+
+        // キーを押したとき
+        window.onkeydown = bgChange;
+
+        // キーを上げたとき
+        window.onkeyup = bgChange;
+
+        // カーソルを載せたとき
+        btn.onmouseover = bgChange;
+
+        // カーソルを離した時
+        btn.onmouseout = bgChange;
+
+    </script>
+  </body>
+</html>
