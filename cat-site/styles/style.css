@@ -1,0 +1,36 @@
+html {
+    font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
+    font-family: 'Ranchers', sans-serif; /* this should be the rest of the output you got from Google fonts */
+    background-color: #b5d1ff
+    ;
+  }
+
+
+h1 {
+    margin: 0;
+    padding: 20px 0;    
+    color: #b6c1d6;
+    text-shadow: 20px 20px 2px black;
+    text-align: center;
+    font-size: 60px;
+}
+  
+
+p, li {
+    font-size: 16px;    
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FF9500;
+    padding: 0px 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+img {
+    display: block;
+    margin: 0 auto;
+}
