@@ -30,6 +30,14 @@
         // buttonオブジェクトのonclickのイベントハンドラにbgChangeを割り当てる
         btn.onclick = bgChange;
 
+        // 他の方法
+        // btn.addEventListener('click', bgChange);
+        // これを使うとremoveできる
+        // btn.removeEventListener('click', bgChange);
+        // 加えておなじ要素に複数のイベントリスナーを指定できる
+        // myElement.addEventListener('click', functionA);
+        // myElement.addEventListener('click', functionB);
+
         // フォーカス当てたとき
         btn.onfocus = bgChange;
 
